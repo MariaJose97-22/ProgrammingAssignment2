@@ -40,3 +40,7 @@ cacheSolve <- function(x, ...) {
   
 }
 ## An example: >cacheSolve(example).
+example<-makecachematrix(matrix(c(1,5,8,9,2,5,2,6,7),nrow = 3,ncol = 3)) 
+example$get()
+cacheSolve(example)
+
